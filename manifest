@@ -2,18 +2,26 @@
 # this is your module manifest and used by Titanium
 # during compilation, packaging, distribution, etc.
 #
-version: 1.0.0
-apiversion: 3
-architectures: armeabi-v7a x86
+version: 3.1.0
+apiversion: 4
+architectures: arm64-v8a armeabi-v7a x86 x86_64
 description: Finally a reliable way to show keyboard on Android
 author: Exygy
 license: Apache 2.0
 copyright: Exygy 2013
-
 
 # these should not be edited
 name: ti_exygy_show_keyboard_android
 moduleid: com.exygy.showkeyboard
 guid: 8585fe40-71c1-4644-af1a-2c86ac7540bf
 platform: android
-minsdk: 6.0.0
+#
+# Classpaths and plugins are used for android packages that requires them
+# to use them you have to add your classpaths and plugins comma separated
+# Ex:
+# classpaths: classpath1,classpath2
+# plugins: plugin1,plugin2
+#
+classpaths:
+plugins:
+minsdk: 12.7.0
